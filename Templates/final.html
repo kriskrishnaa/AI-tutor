@@ -1,0 +1,31 @@
+<html>
+<title>AI Tutor</title>
+<head><link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='Styles/style.css') }}"/>
+</head>
+<body>
+<form action = "http://localhost:5000/success" method = "POST">
+<div class="headerx">
+</div><div class="header">
+<div id="form1" class="header">Email or Username<br>
+<input placeholder="Email" type="mail" name="username"/><br>
+</div>
+<div id="form2" class="header">Password<br>
+<input placeholder="Password" type="password" name="password"/>
+</div>
+</div>
+<input type="submit" class="submit1" value="login"/>
+<div class="bodyx">
+<div id="intro2" class="bodyx">Create an account</div>
+<div id="form3" class="bodyx">
+<input placeholder="Firstname" type="text" id="namebox" name="name1"/><input placeholder="Lastname" type="text" id="namebox"/><br>
+ <input placeholder="Email" type="text" id="mailbox"/><br>
+ <input placeholder="Password" type="password" id="mailbox"/><br>
+ <input placeholder="Re-enter password" type="password" id="mailbox"/><br>
+ </div>
+<img src="{{url_for('static', filename='ai4.jpg')}}" alt="AI" width="1500" height="720">
+ </div>
+<input type="submit" class="button2" value="Signup"/>
+<div class="body1">
+</form>
+</body>
+</html>
